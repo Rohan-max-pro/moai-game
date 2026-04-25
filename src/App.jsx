@@ -683,7 +683,7 @@ export default function App() {
       ctx.fillStyle = shieldActive ? "#8ff6ff" : "rgba(255,255,255,0.75)";
       ctx.fillText(`Shield: ${shieldActive ? "ACTIVE" : "off"}`, 20, 78);
       ctx.fillStyle = slowMoActive ? "#d6a2ff" : "rgba(255,255,255,0.75)";
-      ctx.fillText(`Slow Mo: ${slowMoActive ? "ACTIVE" : "off"}`, 20, 98);
+      ctx.fillText(`Slow Mode: ${slowMoActive ? "ACTIVE" : "off"}`, 20, 98);
       ctx.fillStyle = "rgba(255,255,255,0.8)";
       ctx.fillText("Space / Tap to jump", CANVAS_W - 180, 30);
       ctx.fillText("Collect ◈ coins and power-ups", CANVAS_W - 250, 54);
@@ -864,7 +864,7 @@ export default function App() {
               <div className="flex items-center justify-between"><span>Score</span><span className="font-bold">{score}</span></div>
               <div className="flex items-center justify-between"><span>High Score</span><span className="font-bold">{highScore}</span></div>
               <div className="flex items-center justify-between"><span>Shield</span><span className={shieldActive ? "text-cyan-300 font-bold" : "text-white/60"}>{shieldActive ? "Active" : "Off"}</span></div>
-              <div className="flex items-center justify-between"><span>Slow Mo</span><span className={slowMoActive ? "text-purple-300 font-bold" : "text-white/60"}>{slowMoActive ? "Active" : "Off"}</span></div>
+              <div className="flex items-center justify-between"><span>Slow Mode</span><span className={slowMoActive ? "text-purple-300 font-bold" : "text-white/60"}>{slowMoActive ? "Active" : "Off"}</span></div>
             </div>
           </div>
 
